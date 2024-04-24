@@ -1,0 +1,42 @@
+﻿@model RaulCruz_PruebaProgreso1.Models.RC_Tabla1
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>RC_Tabla1</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RCNombre)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RCNombre)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RCValor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RCValor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RCFechaInicio)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RCFechaInicio)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RCBoleano)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RCBoleano)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.RCId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
